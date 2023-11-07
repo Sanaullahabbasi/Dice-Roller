@@ -14,9 +14,11 @@
     <div id="container">
         <div><h1>Roll the Dice</h1></div>
         <div id="dice">
-            <img src="" alt="">
+            <img id="diceImg" src="images/rollingDice.gif" alt="">
+            <div id="diceVal"></div>
         </div>
-        <button class="btn">Roll</button>
+        <button id="btn-roll" onclick="roll()" class="btn">Roll</button>
+        <button id="btn-clear"  onclick="rollAgain()" class="btn">Clear</button>
     </div>
     
 

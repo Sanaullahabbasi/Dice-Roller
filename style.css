@@ -1,30 +1,63 @@
-body{
-    padding: 10px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    height: 100vh;
+body {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-#container > div > h1{
-    text-align: center;
-    text-transform:uppercase;
-    text-shadow: 2px 2px 3px rgb(176, 27, 27);
-    margin: 20px auto;
+#container > div > h1 {
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 3px rgb(115, 114, 122);
+  margin: 20px auto;
+  font-weight: bolder;
 }
+#dice {
+  width: 500px;
+  height: 60vh;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  margin: 20px auto;
+}
+.btn {
+  background-color: rgb(4, 48, 137);
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+}
+.btn:hover {
+  color: blue;
+  font-weight: bold;
+}
+
+#dice img{
+    width: 400px;
+    height: 300px;
+}
+
 #dice{
-    width: 500px;
-    height: 60vh;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.btn{
-    background-color: cornflowerblue;
-    color: #fff;
-    font-size: 16px;
+#diceImg{
+position: relative;
+}
+
+#diceVal{
+    font-size: 20px;
+    text-align: center;
     font-weight: bold;
-    text-shadow: ;
+    color: #fff;
+    text-shadow: 1px 1px 2px gray;
+    position: absolute;
 }
