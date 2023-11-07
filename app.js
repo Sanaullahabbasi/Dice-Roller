@@ -14,15 +14,22 @@ function roll() {
   clearBtn.style.display = "block";
   clearInterval(imgMotion);
   rollBtn.style.display = "none";
-  imgAnimation.src = "images/blank.png";
-  dicVal.innerHTML = `
-  <h1>${random}</h1>
+  imgAnimation.src = "images/blank" + random + ".png";
+imgAnimation.style.width= "250px";
+imgAnimation.style.height= "200px";
+    dicVal.innerHTML = `
+  <h1>Number is ${random}</h1>
   `;
 }
 
 function rollAgain() {
   var clearBtn = document.getElementById("btn-clear");
   var rollBtn = document.getElementById("btn-roll");
+  var dicVal = document.getElementById("diceVal");
   rollBtn.style.display = "block";
   clearBtn.style.display = "none";
-}
+  dicVal.innerHTML = `
+  <h1></h1>
+  `;
+  setTimeout(img, 10);
+  }
