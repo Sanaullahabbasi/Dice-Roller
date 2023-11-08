@@ -15,9 +15,9 @@ function roll() {
   clearInterval(imgMotion);
   rollBtn.style.display = "none";
   imgAnimation.src = "images/blank" + random + ".png";
-imgAnimation.style.width= "250px";
-imgAnimation.style.height= "200px";
-    dicVal.innerHTML = `
+  imgAnimation.style.width = "250px";
+  imgAnimation.style.height = "200px";
+  dicVal.innerHTML = `
   <h1>Number is ${random}</h1>
   `;
 }
@@ -32,4 +32,4 @@ function rollAgain() {
   <h1></h1>
   `;
   setTimeout(img, 10);
-  }
+}
