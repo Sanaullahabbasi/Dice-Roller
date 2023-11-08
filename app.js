@@ -1,4 +1,3 @@
-var random = Math.floor(Math.random() * 6 + 1);
 
 function img() {
   var imgAnimation = document.querySelector("#dice>img");
@@ -7,6 +6,7 @@ function img() {
 var imgMotion = setInterval(img, 2500);
 
 function roll() {
+  var random = Math.floor(Math.random() * 6 + 1);
   var rollBtn = document.getElementById("btn-roll");
   var imgAnimation = document.querySelector("#dice>img");
   var dicVal = document.getElementById("diceVal");
