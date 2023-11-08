@@ -28,8 +28,6 @@ function rollAgain() {
   var dicVal = document.getElementById("diceVal");
   rollBtn.style.display = "block";
   clearBtn.style.display = "none";
-  dicVal.innerHTML = `
-  <h1></h1>
-  `;
-  setTimeout(img, 10);
+  
+  setTimeout(img, 1);
 }
